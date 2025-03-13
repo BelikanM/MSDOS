@@ -1,0 +1,96 @@
+
+/* src/Upload.css */
+
+.upload-container {
+    max-width: 600px; /* Largeur maximale du conteneur */
+    margin: auto; /* Centrer le conteneur */
+    padding: 20px; /* Espacement interne */
+    background: #ffffff; /* Fond blanc */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+h1, h2 {
+    text-align: center; /* Centrer les titres */
+    color: #333; /* Couleur du texte */
+}
+
+form {
+    display: flex; /* Utiliser flexbox pour le formulaire */
+    flex-direction: column; /* Disposer les éléments en colonne */
+    gap: 15px; /* Espacement entre les éléments */
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+    padding: 10px; /* Espacement interne */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+    transition: border-color 0.3s; /* Transition pour la bordure */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #00bfff; /* Couleur de la bordure au focus */
+    outline: none; /* Retirer le contour par défaut */
+}
+
+button {
+    padding: 10px; /* Espacement interne */
+    background-color: #00bfff; /* Couleur bleu clair */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Changer le curseur au survol */
+    font-size: 16px; /* Taille de la police */
+    transition: background-color 0.3s; /* Transition pour le fond */
+}
+
+button:hover {
+    background-color: #0088cc; /* Couleur bleu plus foncé au survol */
+}
+
+.uploads-list {
+    margin-top: 20px; /* Marge supérieure */
+}
+
+.upload-item {
+    margin-bottom: 20px; /* Marge inférieure */
+    padding: 10px; /* Espacement interne */
+    border: 1px solid #e0e0e0; /* Bordure grise claire */
+    border-radius: 4px; /* Coins arrondis */
+    background: #f9f9f9; /* Fond gris clair */
+}
+
+.media-preview {
+    margin-top: 10px; /* Marge supérieure */
+}
+
+.media {
+    width: 100%; /* Largeur à 100% */
+    max-height: 300px; /* Hauteur maximale */
+    object-fit: cover; /* Ajuster le contenu */
+}
+
+.google-login-button {
+    background-color: #db4437; /* Couleur de fond pour le bouton Google */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Changer le curseur au survol */
+    font-size: 16px; /* Taille de la police */
+    transition: background-color 0.3s; /* Transition pour le fond */
+    display: block; /* Bloc pour centrer */
+    margin: 20px auto; /* Centre le bouton */
+    width: fit-content; /* Ajuste la largeur au contenu */
+}
+
+.google-login-button:hover {
+    background-color: #c13524; /* Couleur plus foncée au survol */
+}
+

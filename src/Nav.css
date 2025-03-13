@@ -1,0 +1,45 @@
+
+/* src/Nav.css */
+.navbar {
+ background-color: #ff7f50; /* Couleur orange */
+ border-top: 4px solid solid #00bfff; /* Bord supérieur bleu clair */
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ z-index: 1000; /* Assurez-vous qu'il soit au-dessus des autres éléments */
+ display: flex;
+ justify-content: space-around;
+ padding: 10px 0;
+ box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+ color: .1);
+}
+
+.nav-link {
+ color: #fff; /* Couleur des icônes */
+ text-align: center;
+ transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+ color: #00bfff; /* Changement de couleur au survol */
+}
+
+.icon {
+ font-size: 24px; /* Taille des icônes */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+ .navbar {
+ padding: 12px 0;
+ }
+ 
+ .icon {
+ font-size: 20px; /* Réduire la taille des icônes sur les petits écrans */
+ }
+}
+

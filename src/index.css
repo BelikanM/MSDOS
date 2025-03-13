@@ -1,3 +1,12 @@
+
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,6 +20,112 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
+/* Container pour l'upload */
+.upload-container {
+  background-color: #f9fafb; /* Gris clair */
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Boutons */
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b82f6; /* Bleu plus foncé */
+}
+
+/* Formulaire */
+input[type="text"], textarea, input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db; /* Gris clair */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"]:focus, textarea:focus, input[type="file"]:focus {
+  border-color: #2563eb; /* Bleu clair */
+  outline: none;
+}
+
+/* Titre et description */
+h1, h2 {
+  color: #1f2937; /* Gris foncé */
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Fichiers téléversés */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #ffffff; /* Blanc */
+  border: 1px solid #e5e7eb; /* Gris clair */
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li:hover {
+  background-color: #f3f4f6; /* Gris très clair */
+}
+
+/* Image de prévisualisation */
+img {
+  border-radius: 8px;
+}
+
+/* Liens pour les fichiers PDF ou autres */
+a {
+  color: #2563eb; /* Bleu clair */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styles pour le bouton de suppression */
+button.ml-4 {
+  background: none;
+  border: none;
+  color: #ef4444; /* Rouge */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button.ml-4:hover {
+  color: #dc2626; /* Rouge plus foncé */
+}
+
+/* Désactivation du bouton de téléversement */
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Espace entre les boutons de type de fichier */
+div > button {
+  margin-right: 0.75rem;
+}

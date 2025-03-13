@@ -1,28 +1,15 @@
-// Affichage.js
-import React, { useEffect, useState } from 'react';
-import { listFiles } from './appwrite';  // Nouvelle importation
+
+// src/Affichage.jsx
+import React from 'react';
 
 const Affichage = () => {
-  const [files, setFiles] = useState([]);
-
-  useEffect(() => {
-    const fetchFiles = async () => {
-      const response = await listFiles();  // Nouvelle fonction
-      setFiles(response);
-    };
-    fetchFiles();
-  }, []);
-
-  return (
-    <div>
-      <h1>Liste des fichiers</h1>
-      <ul>
-        {files.map((file, index) => (
-          <li key={index}>{file.name}</li>
-        ))}
-      </ul>
-    </div>
-  );
+    return (
+        <div className="p-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg">
+            <h1 className="text-3xl font-bold mb-4">Affichage Page</h1>
+            <p>Ajoutez votre logique d'affichage ici.</p>
+        </div>
+    );
 };
 
 export default Affichage;
+
